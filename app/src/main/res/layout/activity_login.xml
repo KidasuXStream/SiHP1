@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        style="@style/tv_form"
+        android:layout_width="230dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+        <TextView
+            style="@style/tv_form"
+            android:layout_width="230dp"
+            android:layout_margin="5dp"
+            android:text="E-Mail"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_login_usernameku"
+            android:hint="Masukkan E-Mail"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+            android:textAlignment="center"
+            android:maxLines="1"/>
+        <TextView
+            style="@style/tv_form"
+            android:layout_width="230dp"
+            android:layout_margin="5dp"
+            android:text="Password"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_login_passwordku"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:textAlignment="center"
+            android:maxLines="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_login_submit"
+                android:text="Login"
+                style="@style/btn_form"/>
+            <Button
+                android:id="@+id/btn_login_register"
+                android:text="Register"
+                style="@style/btn_form"/>
+        </LinearLayout>
+    </LinearLayout>
